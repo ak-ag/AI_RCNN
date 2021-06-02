@@ -1,11 +1,4 @@
 """
-Paper: "Fast and Accurate Image Super Resolution by Deep CNN with Skip Connection and Network in Network"
-Author: Jin Yamanaka
-Github: https://github.com/jiny2001/dcscn-image-super-resolution
-
-Convert RGB(A)-(PNG or Jpeg) Image to Y-BMP images
-
-Put your images under data/[your dataset name]/ and specify [your dataset name] for --dataset.
 
 
 """
