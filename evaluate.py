@@ -1,29 +1,5 @@
 """
-Paper: "Fast and Accurate Image Super Resolution by Deep CNN with Skip Connection and Network in Network"
-Ver: 2.0
 
-Functions for evaluating model performance
-
-Put your images under data/[your dataset name]/ and specify [your dataset name] for --test_dataset.
-This script will create LR images from your test dataset and evaluate the model's performance.
-
---save_results=True: will provide generated HR images and bi-cubic HR images.
-see output/[model_name]/data/[your test data]/ for checking result images.
-
-Also you must put same model args as you trained.
-
-For ex, if you trained like below,
-> python train.py --scale=3
-
-Then you must run evaluate.py like below.
-> python evaluate.py --scale=3 --file=your_image_file_path
-
-
-If you trained like below,
-> python train.py --dataset=bsd200 --layers=8 --filters=96 --training_images=30000
-
-Then you must run evaluate.py like below.
-> python evaluate.py --layers=8 --filters=96 --file=your_image_file_path
 """
 
 import logging
