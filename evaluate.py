@@ -57,7 +57,7 @@ def evaluate_bicubic(model, test_data):
         psnr, ssim = model.evaluate_bicubic(filename, print_console=False)
         total_psnr += psnr
         total_ssim += ssim
-
+    print("Total psnr: ",total_psnr,"Total ssim:",total_ssim)
     logging.info("Bicubic Average [%s] PSNR:%f, SSIM:%f" % (
         test_data, total_psnr / len(test_filenames), total_ssim / len(test_filenames)))
 
@@ -78,6 +78,8 @@ def evaluate_model(model, test_data):
         total_psnr += psnr
         total_ssim += ssim
         total_time += elapsed_time
+    print("Total psnr: ",total_psnr,"Total ssim:",total_ssim)
+
 
     logging.info("Model Average [%s] PSNR:%f, SSIM:%f, Time (s): %f" % (
         test_data, total_psnr / len(test_filenames), total_ssim / len(test_filenames), total_time / len(test_filenames)))
