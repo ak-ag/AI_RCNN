@@ -88,7 +88,7 @@ class SuperResolution(tf_graph.TensorflowGraph):
             util.clean_dir(self.tf_log_dir)
         util.set_logging(flags.log_filename, stream_log_level=logging.INFO, file_log_level=logging.INFO,
                          tf_log_level=tf.logging.WARN)
-        logging.info("\nDCSCN v2-------------------------------------")
+        logging.info("\nAI_Rcnn by Anandh, Anandh, Arushi, Akshat---------------------")
         logging.info("%s [%s]" % (util.get_now_date(), self.name))
 
         self.init_train_step()
